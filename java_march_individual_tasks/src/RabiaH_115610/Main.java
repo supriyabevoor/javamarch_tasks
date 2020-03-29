@@ -6,13 +6,16 @@ public class Main {
 	public static void main(String[] args) {
 		// Scanner class object to get input from console
 		Scanner sc=new Scanner(System.in);
-		// creating array of integers 
-		int[] num=new int[5];
+		// creating array of integers
+		System.out.print("Enter the length of array : ");
+		int n = sc.nextInt();
+		int[] num = new int[n];
 		System.out.println("Enter array elements: ");
 		// read array elements from console
 		for(int i=0;i<num.length;i++) {
 			num[i]=sc.nextInt();
 		}
+		sc.close();
 		// call getSumOfPower() method
 		int sum=UserMainCode.getSumOfPower(num);
 		System.out.println("Sum of power of array elements: "+sum);
