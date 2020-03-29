@@ -24,7 +24,6 @@ static int ipValidator(String ip) {
 	
 	int flag=2;
 	
-	
 	StringTokenizer tokenizedIp=new StringTokenizer(ip,".");
 	
 	while(tokenizedIp.hasMoreTokens()) {
